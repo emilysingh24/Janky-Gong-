@@ -1,5 +1,6 @@
 import greenfoot.*;
 public class Mario extends Actor
+
 {
     int speed;
     String Marioimage = "mariopixelCopy.png";
@@ -56,9 +57,11 @@ public class Mario extends Actor
                     lastTime = System.currentTimeMillis();
                 }
             } */
+            GreenfootImage img = new GreenfootImage("mariopixelCopy.png");
+            img.scale(img.getWidth()/2, img.getHeight()/2);
+            setImage(img);
             
-           
-            setImage("mariopixelCopy.png");
+            
             while(isTouching(Floor.class))
             {
                move(1);
@@ -67,7 +70,11 @@ public class Mario extends Actor
             if(Greenfoot.isKeyDown("right"))
             {
                move(5);
-               setImage("mariopixel.png");
+                GreenfootImage img = new GreenfootImage("mariopixelCopy.png");
+                img.scale(img.getWidth()/2, img.getHeight()/2);
+                setImage(img);
+               
+               
                 while(isTouching(Floor.class))
                 {
                   move(-1);
