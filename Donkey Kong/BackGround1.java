@@ -15,7 +15,7 @@ public class BackGround1 extends World
      */
     public BackGround1()
     {    
-        super(1500, 1000, 1); 
+        super(1350, 700, 1); 
         
         setBackground(new GreenfootImage("brick.jpg"));
     
@@ -38,6 +38,6 @@ public class BackGround1 extends World
         addObject(new Floor2(), 875, 1000);
         addObject(new Floor2(), 1125, 1000);
         addObject(new Floor2(), 1375, 1000);
-        addObject(new Mario(), 125, 940);
+        addObject(new Mario(), 125, 540);
     }
 }
