@@ -57,7 +57,7 @@ public class Mario extends Actor
                     lastTime = System.currentTimeMillis();
                 }
             } */
-            GreenfootImage img = new GreenfootImage("runningleft(2).png");
+            GreenfootImage img = new GreenfootImage("mariopixelCopy.png");
             img.scale(img.getWidth()/2, img.getHeight()/2);
             setImage(img);
             
