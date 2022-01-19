@@ -17,7 +17,7 @@ public class BackGround1 extends World
     {    
         super(1500, 1000, 1); 
         
-        setBackground(new GreenfootImage("brick.jpg"));
+        setBackground(new GreenfootImage("board.jpg"));
     
         addObject(new DK(), 200, 150);
         addObject(new Floor(), 125, 219);
