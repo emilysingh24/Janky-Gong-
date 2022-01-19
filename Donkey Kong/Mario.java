@@ -70,7 +70,7 @@ public class Mario extends Actor
             if(Greenfoot.isKeyDown("right"))
             {
                move(5);
-                GreenfootImage img = new GreenfootImage("mariopixelCopy.png");
+                GreenfootImage img = new GreenfootImage("mariopixel.png");
                 img.scale(img.getWidth()/2, img.getHeight()/2);
                 setImage(img);
                
@@ -80,7 +80,10 @@ public class Mario extends Actor
                   move(-1);
                }
             } else{
-                setImage("mario-big.png");
+            GreenfootImage image = new GreenfootImage("mario-big.png");
+            image.scale(image.getWidth()/2, image.getHeight()/2);
+            setImage(image);
+                
             }
         }
         if(Greenfoot.isKeyDown("down"))
