@@ -19,13 +19,13 @@ public class BackGround1 extends World
         
         setBackground(new GreenfootImage("brick.jpg"));
     
-        addObject(new DK(), 200, 150);
-        addObject(new Floor(), 125, 219);
-        addObject(new Floor(), 375, 219);
-        addObject(new Floor(), 625, 219);
-        addObject(new Floor(), 875, 219);
-        addObject(new Floor2(), 625, 500);
-        addObject(new Floor2(), 875, 500);
+        addObject(new DK(), 125, 85);
+        addObject(new Floor(), 90, 119);
+        addObject(new Floor(), 370, 119);
+        addObject(new Floor(), 259, 119);
+        addObject(new Floor(), 1239, 199);
+        addObject(new Floor2(), 1071, 199);
+        addObject(new Floor2(), 904, 199);
         addObject(new Floor2(), 1125, 500);
         addObject(new Floor2(), 1375, 500);
         addObject(new Floor(), 125, 781);
