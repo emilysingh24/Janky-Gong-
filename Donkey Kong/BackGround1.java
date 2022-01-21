@@ -17,27 +17,37 @@ public class BackGround1 extends World
     {    
         super(1350, 700, 1); 
         
-        setBackground(new GreenfootImage("brick.jpg"));
-    
+        setBackground(new GreenfootImage("board.jpg"));
         addObject(new DK(), 125, 85);
-        addObject(new Floor(), 90, 119);
-        addObject(new Floor(), 370, 119);
-        addObject(new Floor(), 259, 119);
-        addObject(new Floor(), 1239, 199);
-        addObject(new Floor2(), 1071, 199);
+        
+        Floors(60,119);
+        Floors(178,119);
+        
+        addObject(new Floor2(), 1070, 199);
         addObject(new Floor2(), 904, 199);
-        addObject(new Floor2(), 1125, 500);
-        addObject(new Floor2(), 1375, 500);
-        addObject(new Floor(), 125, 781);
-        addObject(new Floor(), 375, 781);
-        addObject(new Floor(), 625, 781);
-        addObject(new Floor(), 875, 781);
-        addObject(new Floor2(), 125, 1000);
-        addObject(new Floor2(), 375, 1000);
-        addObject(new Floor2(), 625, 1000);
-        addObject(new Floor2(), 875, 1000);
-        addObject(new Floor2(), 1125, 1000);
-        addObject(new Floor2(), 1375, 1000);
+        addObject(new Floor2(), 80,  323);
+        addObject(new Floor2(), 249, 323);
+        addObject(new Floor(), 390, 323);
+        addObject(new Floor(), 908, 367);
+        addObject(new Floor(), 1077, 367);
+        addObject(new Floor(), 1247, 367);
+        addObject(new Floor2(), 258, 492);
+        addObject(new Floor2(), 90, 492);
+        addObject(new Floor2(), 398, 492);
+        addObject(new Floor2(), 916, 569);
+        addObject(new Floor2(), 1255, 569);
+        addObject(new Floor2(), 1087, 569);
         addObject(new Mario(), 125, 540);
+    }
+            public void Floors(int floorX, int floorY){
+        addObject(new Floor(), floorX, floorY);
+        addObject(new Floor(), floorX + 118, floorY);
+        addObject(new Floor(), floorX + 236, floorY);
+        addObject(new Floor(), floorX + 356, floorY);
+        addObject(new Floor(), floorX + 474, floorY);
+        addObject(new Floor(), floorX + 572, floorY);
+        addObject(new Floor(), floorX + 691, floorY);
+        addObject(new Floor(), floorX + 810, floorY);
+        addObject(new Floor(), floorX + 928, floorY);
     }
 }
